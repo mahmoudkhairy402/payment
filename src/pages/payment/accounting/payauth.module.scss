@@ -1,0 +1,153 @@
+$primary-color: #464a4d;
+
+.accountContainer {
+  font-family: var(--fontFamily) !important;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  align-items: center;
+  .acounting {
+    padding: 30px;
+    border: 1px solid rgb(241, 242, 243);
+    width: 550px;
+    border-radius: 10px;
+    .header {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .image {
+        width: 70px;
+        img {
+          max-width: 100%;
+          object-fit: conver;
+        }
+      }
+      .spans {
+        display: flex;
+        flex-direction: column;
+        // gap: 3px;
+        font-size: 14px;
+        font-weight: 600;
+        .prefered {
+          border-radius: 8px;
+          background-color: #8c7abd;
+          color: #fff;
+          padding: 1px 5px;
+          text-transform: capitalize;
+          font-size: 16px;
+        }
+      }
+      .back {
+        .i {
+          transform: rotate(180deg);
+          color: gray;
+        }
+      }
+    }
+    .title {
+      // display: flex;
+      width: 200px;
+      gap: 15px;
+      font-family: var(--fontFamily);
+      text-transform: capitalize;
+      font-weight: 600;
+      .text {
+        font-size: 16px;
+        margin: none;
+      }
+    }
+    .secTitle {
+      font-size: 14px;
+      margin-top: 10px;
+    }
+    .more {
+      text-transform: capitalize;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 20px 10px 15px 12px;
+      font-family: var(--fontFamily);
+      font-size: 16px;
+      text-align: left;
+      border: 1px solid rgb(192, 193, 193);
+      border-radius: 4px;
+      margin-top: 15px;
+      font-weight: 400;
+      position: relative;
+    }
+    .inputcon {
+      position: relative;
+    }
+
+    .inputcon::after {
+      position: absolute;
+      content: "*your address here";
+      left: 13px;
+      top: 19px;
+      width: 200px;
+      height: 100px;
+      z-index: 10;
+      color: #767373 !important;
+      font-size: 14px;
+    }
+
+    .payInfo {
+      margin-top: 10px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+    .payInfo2 {
+      @extend .payInfo;
+      font-weight: 600;
+    }
+    .moreinfo {
+      width: 100%;
+      text-align: center;
+    }
+    .second {
+      font-size: 16px;
+      text-align: center;
+      margin-top: 40px;
+      font-weight: 600;
+      .link {
+        color: var(--secColor) !important;
+        text-transform: capitalize;
+        font-weight: 600;
+        margin-left: 4px;
+        color: "";
+      }
+    }
+    .butns {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 15px;
+      text-transform: capitalize;
+      .continue {
+        padding: 7px 90px;
+        border-radius: 20px;
+        background-color: var(--mainColor);
+        color: var(--textColor) !important;
+        transition: 0.2s;
+        &:hover {
+          background-color: var(--secColor);
+        }
+      }
+      .cancel {
+        color: var(--secColor);
+        font-weight: 600;
+      }
+    }
+  }
+}

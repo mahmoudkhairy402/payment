@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--textColor);
+  /* position: relative; */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace !important;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --mainColor: #0d216a;
+  --secColor: #0070ba;
+  --orangeOpacity: #f8d9c690;
+  --textColor: #fff;
+  --darktextColor: #1d1d1d;
+  --lightGray: #8a8a8a;
+  --darkGray: #adabab;
+  --navlinkcolor: #d1f1ff;
+  --maintext: #001435;
+
+  --fontFamily: PayPalOpen-Regular, "Helvetica Neue", Arial, sans-serif;
+}
+
+body a {
+  text-decoration: none;
+  /* color: var(--textColor); */
+  font-family: PayPalOpen-Regular, "Helvetica Neue", Arial, sans-serif;
+}
+
+.active {
+  background-color: #27419a !important;
+}
+
+.activeSec {
+  color: #1844b5 !important;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.disabled {
+  opacity: 0.5;
+  background-color: #fff !important;
+  border: 2px solid gray !important;
+  cursor: not-allowed;
+  pointer-events: none;
+  color: black !important;
+}
+.disabled:hover {
+  background-color: inherit; /* Or any other appropriate reset */
+}
